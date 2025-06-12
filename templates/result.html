@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #1f1f1f;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            color: #bb86fc;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #03dac6;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #bb86fc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background-color: #9b5de5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Prediction Result</h1>
+        <p class="result">{{ result }}</p>
+        <a href="/" class="back-btn">🔙 Try Again</a>
+    </div>
+</body>
+</html>
